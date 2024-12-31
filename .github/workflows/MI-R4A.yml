@@ -91,7 +91,7 @@ jobs:
         ## Alist测试 ~10MB ##
         echo "CONFIG_FIRMWARE_INCLUDE_ALIST=n" >> .config #Alist
         ##流控QOS##
-        echo "CONFIG_FIRMWARE_INCLUDE_SQM=y" >> .config #Qos限速
+        echo "CONFIG_FIRMWARE_INCLUDE_SQM=n" >> .config #Qos限速
         #CPU超频#
         echo "CONFIG_FIRMWARE_INCLUDE_OC=y" >> .config #CPU超频开关
         echo 'CONFIG_FIRMWARE_MT7621_OC="0x3B2"' >> .config #此处填写对应频率的十六进制：1000Mhz=0x312 1100Mhz=0x362 1120Mhz=0x372 1200Mhz=0x3B2
